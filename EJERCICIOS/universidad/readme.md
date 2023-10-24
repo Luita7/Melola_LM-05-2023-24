@@ -1,8 +1,9 @@
 # Responder con el LocationPath
 
 Por ejemplo, en el punto 1 "Nombre de la universidad" sería:
-
+```
 /universidad/nombre
+```
 
 1. Nombre de la universidad
 2. País de la universidad
