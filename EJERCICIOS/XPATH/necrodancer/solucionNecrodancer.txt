@@ -1,0 +1,14 @@
+
+Solución
+1 /necrodancer/items/armor_glass
+2 /necrodancer/items/armor_glass/text()
+3 con nombre atributo: /necrodancer/items/armor_glass/@coinCost
+solo valor: string(/necrodancer/items/armor_glass/@coinCost)
+4 //bat/stats
+5 //stats
+6 //stats[@damagePerHit>5]/..
+7 //stats[@priority>30000000 and @priority<40000000]/..
+8 sum(//enemies//stats[@priority>40000000 and @priority<50000000]/../stats/@coinsToDrop)
+sum(//stats[@priority>40000000 and @priority<50000000]/@coinsToDrop)
+9 //enemies/child::node()[@friendlyName[contains(.,'Skeleton')]]
+9 //enemies//@friendlyName[contains(.,'Skeleton')]
