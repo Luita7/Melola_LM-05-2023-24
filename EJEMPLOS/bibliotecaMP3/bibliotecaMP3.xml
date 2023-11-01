@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MiBibliotecaMP3>
+  <archivo>
+    <cancion>Hangar 18</cancion>
+    <artista cantante="Dave Mustaine" >Megadeth</artista>
+    <disco discografica="capitol" anio="1990">Rust in Peace</disco>
+    <puntuacion>9</puntuacion>
+  </archivo>
+ <archivo>
+    <cancion>Peace Sells</cancion>
+    <artista cantante="Dave Mustaine">Megadeth</artista>
+    <disco discografica="capitol" anio="1986">Peace Sells...But Who's Buying</disco>
+    <puntuacion>9</puntuacion>
+    </archivo>
+<archivo>
+    <cancion>Master of Puppets</cancion>
+    <artista cantante="James Hetfield">Metallica</artista>
+    <disco discografica="Elektra" anio="1986">Master of Puppets</disco>
+    <puntuacion>10</puntuacion>
+    </archivo>
+  <archivo>
+    <cancion>Among The Living</cancion>
+    <artista cantante="Joey Belladonna">Anthrax</artista>
+    <disco discografica="Megaforce" anio="1987">Among The Living</disco>
+    <puntuacion>8</puntuacion>
+    </archivo>  
+</MiBibliotecaMP3>
