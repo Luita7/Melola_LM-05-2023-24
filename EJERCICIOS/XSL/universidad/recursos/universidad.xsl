@@ -4,7 +4,7 @@
       <html>
          <body>
             <h1>Universidad de Alcalá de Henares</h1>
-            <h2>Informe de notas finales 2020-2021</h2>
+            <h2>Informe de notas finales 2023-2024</h2>
             <table border="1">
                <tr>
                   <th>FOTO</th>
