@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="universidad.xsl" type="text/xsl"?>
+<universidad>
+	<nombre>Universidad de Alcalá de Henares</nombre>
+	<pais>España</pais>
+
+	<carreras>
+		<carrera id="c01">
+			<nombre>I.T.Informatica</nombre>
+			<plan>2003</plan>
+			<creditos>250</creditos>
+			<centro>Escuela de Informatica</centro>
+		</carrera>
+		<carrera id="c02">
+			<nombre>Dipl.Empresariales</nombre>
+			<plan>2001</plan>
+			<creditos>275</creditos>
+			<centro>Facultad de Ciencias Sociales</centro>
+		</carrera>
+		<carrera id="c03">
+			<nombre>Dipl.Relaciones Laborales</nombre>
+			<plan>2001</plan>
+			<creditos>280</creditos>
+			<centro>Facultad de Ciencias Sociales</centro>
+			<subdirector>Alfonso Martin Luque</subdirector>
+		</carrera>
+	</carreras>
+
+
+	<asignaturas>
+		<asignatura id="a01" titulacion="c01">
+			<nombre>Ofimatica</nombre>
+			<creditosteoricos>3</creditosteoricos>
+			<creditospracticos>1.5</creditospracticos>
+			<trimestre>1</trimestre>
+		</asignatura>
+		<asignatura id="a02" titulacion="c01">
+			<nombre>Ingenieria del Software</nombre>
+			<creditosteoricos>6</creditosteoricos>
+			<creditospracticos>1.5</creditospracticos>
+			<trimestre>2</trimestre>
+		</asignatura>
+		<asignatura id="a03" titulacion="c02">
+			<nombre>Administracion de Empresas</nombre>
+			<creditosteoricos>4</creditosteoricos>
+			<creditospracticos>1.5</creditospracticos>
+			<trimestre>1</trimestre>
+		</asignatura>
+		<asignatura id="a04" titulacion="c02">
+			<nombre>Derecho Internacional</nombre>
+			<creditosteoricos>4</creditosteoricos>
+			<creditospracticos>5</creditospracticos>
+			<trimestre>1</trimestre>
+		</asignatura>
+		<asignatura id="a08" titulacion="c01">
+			<nombre>Bases de Datos</nombre>
+			<creditosteoricos>4.5</creditosteoricos>
+			<creditospracticos>5.5</creditospracticos>
+			<trimestre>1</trimestre>
+		</asignatura>
+	</asignaturas>
+
+	<alumnos>
+		<alumno id="e01" avatar="avatar1.jpg">
+			<apellido1>Rivas</apellido1>
+			<apellido2>Santos</apellido2>
+			<nombre>Victor Manuel</nombre>
+			<sexo>Hombre</sexo>
+			<estudios>
+				<carrera codigo="c01" />
+				<asignaturas>
+					<asignatura codigo="a01" ev1="5" ev2="5" ev3="5" final="5"/>
+					<asignatura codigo="a03" ev1="6" ev2="5" ev3="3" final="3"/>
+					<asignatura codigo="a02" ev1="3" ev2="5" ev3="7" final="5"/>
+					<asignatura codigo="a04" ev1="6" ev2="6" ev3="6" final="6"/>
+				</asignaturas>
+			</estudios>
+		</alumno>
+		<alumno id="e02" avatar="avatar2.jpg">
+			<apellido1>Perez</apellido1>
+			<apellido2>Garcia</apellido2>
+			<nombre>Luisa</nombre>
+			<sexo>Mujer</sexo>
+			<estudios>
+				<carrera codigo="c02" />
+				<asignaturas>
+					<asignatura codigo="a02" ev1="8" ev2="5" ev3="8" final="7" />
+					<asignatura codigo="a01" ev1="9" ev2="9" ev3="9" final="9" />
+				</asignaturas>
+				<proyecto>WebdeIBM.com</proyecto>
+			</estudios>
+		</alumno>
+
+		<alumno id="e03" avatar="avatar4.jpg" beca="si">
+			<apellido1>Perez</apellido1>
+			<apellido2>Romero</apellido2>
+			<nombre>Fernando</nombre>
+			<sexo>Hombre</sexo>
+			<estudios>
+				<carrera codigo="c02" />
+				<asignaturas>
+					<asignatura codigo="a04" ev1="6" ev2="6" ev3="6" final="6"/>
+				</asignaturas>
+			</estudios>
+		</alumno>
+
+		<alumno id="e04" avatar="avatar3.jpg">
+			<apellido1>Avalon</apellido1>
+			<apellido2>Jimenez</apellido2>
+			<nombre>Mara</nombre>
+			<sexo>Mujer</sexo>
+			<estudios>
+				<carrera codigo="c01" />
+				<asignaturas>
+					<asignatura codigo="a02"  ev1="8" ev2="8" ev3="8" final="8"/>
+					<asignatura codigo="a01" ev1="1" ev2="2" ev3="6" final="3"/>
+					<asignatura codigo="a08" ev1="5" ev2="5" ev3="8" final="6"/>
+				</asignaturas>
+				<proyecto>Estudio de Salinidad del Pantano Iris</proyecto>
+			</estudios>
+		</alumno>
+	</alumnos>
+</universidad>
