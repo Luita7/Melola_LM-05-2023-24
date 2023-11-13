@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding ="ISO-8859-15"?>
+<?xml-stylesheet type="text/xsl" href="PlantillasLibro.xsl"?>
+<libreria>
+	<libro>
+		<titulo>Dos por tres calles</titulo>
+		<autor>Josefa Santos</autor>
+		<precio>52.45</precio>
+	</libro>
+	<libro>
+		<titulo>Otro libro</titulo>
+		<autor>Pablo Coelo</autor>
+		<precio>32.45</precio>
+	</libro>
+	<libro>
+		<titulo>Mas libros</titulo>
+		<autor>Arturo Perez Reverte</autor>
+		<precio>99.45</precio>
+	</libro>
+
+</libreria>
