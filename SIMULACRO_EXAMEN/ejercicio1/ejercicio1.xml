@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ejercicio1.xsd">
+    <generos>
+        <genero idGenero="NA">Narrativa actual</genero>
+        <genero idGenero="PC">Poesía contemporánea</genero>
+        <genero idGenero="NN">Novela negra</genero>
+        <genero idGenero="RB">Relatos breves</genero>
+        <genero idGenero="LIYJ">Libro infantil y juvenil</genero>
+        <genero idGenero="LT">Libros técnicos</genero>
+        <genero idGenero="CFYF">Ciencia ficción y fantasía</genero>
+    </generos>
+    <libros>
+        <libro genero="PC" ISBN="111-55-585858-3-7">
+            <autor>Emilio Sieasdfasdf asdfasdfrra</autor>
+            <anio>2022</anio>
+            <paginas>44</paginas>
+            <formato>
+                <tapaBlanda/>
+                <solapas/>
+            </formato>
+            <size>
+                <ancho>14</ancho>
+                <alto>21</alto>
+            </size>
+            <precio>18</precio>
+        </libro>
+        <libro genero="NA" ISBN="111-55-585858-3-7">
+            <autor>Jorge Sierra</autor>
+            <anio>2022</anio>
+            <paginas>44</paginas>
+            <formato>
+                <tapaDura/>
+            </formato>
+            <size>
+                <ancho>14</ancho>
+                <alto>21</alto>
+            </size>
+            <precio unidad="libra">18.5</precio>
+        </libro>
+    </libros>
+
+</biblioteca>

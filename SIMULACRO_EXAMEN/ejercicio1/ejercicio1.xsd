@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- TIPOS SIMPLES-->
+    <xs:simpleType name="long50">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoISBN">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}-[0-9]{2}-[0-9]{6}-[0-9]{1}-[0-9]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoPags">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="0"/>
+            <xs:maxExclusive value="400"/>
+        </xs:restriction>
+
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoMoneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="euro"/>
+            <xs:enumeration value="dolar"/>
+            <xs:enumeration value="libra"/>
+        </xs:restriction>
+
+    </xs:simpleType>
+
+    <!-- TIPOS COMPLEJOS-->
+
+    <xs:complexType name="tipoGenero">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="idGenero" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoGeneros">
+        <xs:sequence>
+            <xs:element name="genero" maxOccurs="unbounded" type="tipoGenero"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFormato">
+        <xs:sequence>
+            <xs:choice>
+                <xs:element name="tapaDura" minOccurs="1" />
+                <xs:element name="tapaBlanda" minOccurs="1" />
+            </xs:choice>
+            <xs:element name="solapas" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipoSize">
+        <xs:all>
+            <xs:element name="ancho" type="xs:positiveInteger" />
+            <xs:element name="alto" type="xs:positiveInteger" />
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPrecio">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="unidad" use="optional" type="tipoMoneda" default="euro"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibro">
+        <xs:group ref="grupoLibro"/>
+        <xs:attribute name="genero" use="required" />
+        <xs:attribute name="ISBN" use="required" type="tipoISBN"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoLibros">
+        <xs:sequence>
+            <xs:element name="libro" maxOccurs="unbounded" type="tipoLibro"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoBiblioteca">
+        <xs:all>
+            <xs:element name="generos" type="tipoGeneros"/>
+            <xs:element name="libros" type="tipoLibros">
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+
+    <!-- root -->
+    <xs:element name="biblioteca" type="tipoBiblioteca">
+        <xs:key name="keyGenero">
+            <xs:selector xpath="generos/genero"/>
+            <xs:field xpath="@idGenero"/>
+        </xs:key>
+        <xs:keyref name="keyRefGen" refer="keyGenero">
+            <xs:selector xpath="libros/libro"/>
+            <xs:field xpath="@genero"/>
+        </xs:keyref>
+
+    </xs:element>
+
+
+    <!-- GRUPO -->
+    <xs:group name="grupoLibro">
+        <xs:sequence>
+            <xs:element name="autor" type="long50"/>
+            <xs:element name="anio" type="xs:gYear" />
+            <xs:element name="paginas" type="tipoPags" minOccurs="0"/>
+            <xs:element name="formato" type="tipoFormato"/>
+            <xs:element name="size" type="tipoSize"/>
+            <xs:element name="precio" type="tipoPrecio"/>
+        </xs:sequence>
+    </xs:group>
+</xs:schema>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejercicio2.xsl" type="text/xsl"?>
+<recetas>
+	<categorias>
+		<categoria idCat="C1">Bajos en grasa</categoria>
+		<categoria idCat="C2">Gran contenido en grasa</categoria>
+		<categoria idCat="C3">Hipercalóricos</categoria>
+		<categoria idCat="C4">Bajas calorias</categoria>
+		<categoria idCat="C5">Con azúcares añadidos</categoria>
+		<categoria idCat="C6">Apto para celiacos</categoria>
+	</categorias>	
+	<receta foto="tartaChocolate.jpg" idCats="C3 C5">
+		<dificultad>Fácil</dificultad>
+		<nombre>Tarta de chocolate</nombre>
+		<ingredientes>
+			<ingrediente nombre="Cola-Cao" cantidad="250 gramos"/>
+			<ingrediente nombre="mantequilla" cantidad="200 gramos"/>
+			<ingrediente nombre="harina" cantidad="1 vaso"/>
+			<ingrediente nombre="azúcar" cantidad="1 vaso"/>
+			<ingrediente nombre="huevos" cantidad="3"/>
+		</ingredientes>
+		<calorias>600</calorias>
+		<pasos>
+			<paso orden="1">Mezclar el cola-cao con la mantequilla.</paso>
+			<paso orden="2">Separar las yemas y mezclarlas con el azúcar.</paso>
+			<paso orden="3">Unir ambas mezclas y añadir la harina.</paso>
+			<paso orden="4">Montar las claras y añadirlas a la mezcla anterior mezclando siempre de arriba hacia abajo para que no se bajen las claras.</paso>
+			<paso orden="5">Untar un molde de mantequilla y espolvorear de harina.</paso>
+			<paso orden="6">Precalentar el horno y hornear a 175 grados durante unos 40 min.</paso>
+		</pasos>
+		<tiempo unidad="minutos">45</tiempo>
+		<elaboracion>Horno</elaboracion>
+	</receta>
+
+	<receta foto="polloEsparragos.jpg" idCats="C1 C6 C4">
+		<dificultad>Media</dificultad>
+		<nombre>Pechugas de pollo en salsa de espárragos</nombre>
+		<ingredientes>
+			<ingrediente nombre="pechugas de pollo" cantidad="500 gramos"/>
+			<ingrediente nombre="puntas de espárragos" cantidad="1 lata pequeña"/>
+			<ingrediente nombre="cebolla" cantidad="1"/>
+			<ingrediente nombre="ajo" cantidad="2 dientes"/>
+			<ingrediente nombre="huevo" cantidad="1"/>
+		</ingredientes>
+		<calorias>340</calorias>
+		<pasos>
+			<paso>Rebozar las pechugas de pollo, echarles sal y pasarlas por harina y huevo.</paso>
+			<paso>Reservar el caldo de los espárragos para realizar la salsa.</paso>
+			<paso>Picar la cebolla y los dientes de ajo.</paso>
+			<paso>Sofreir el ajo y la cebolla hasta que quede transparente.</paso>
+			<paso>Agregar una cucharada sopera colmada de harina y dorarla ligeramente.</paso>
+			<paso>Verter el caldo de los espárragos y la misma cantidad de agua sin dejar de remover hasta que espese ligeramente para evitar que la salsa haga grumos, poniendo el punto de sal al gusto.</paso>
+			<paso>Añadir las puntas de espárragos.</paso>
+			<paso>Incorporar la carne y dejar que hierva a fuego lento unos 10 minutos.</paso>
+		</pasos>
+		<tiempo unidad="minutos">25</tiempo>
+		<elaboracion>Cazo</elaboracion>
+	</receta>
+	
+	<receta foto="callos.jpg" idCats="C3">
+		<dificultad>Alta</dificultad>
+		<nombre>Callos a la madrileña</nombre>
+		<ingredientes>
+			<ingrediente nombre="chorizo" cantidad="500 gramos"/>
+			<ingrediente nombre="callos" cantidad="1 paquete envasado"/>
+			<ingrediente nombre="cebolla" cantidad="1"/>
+			<ingrediente nombre="ajo" cantidad="2 dientes"/>
+		</ingredientes>
+		<calorias>810</calorias>
+		<pasos>
+			<paso>Los callos deben estar bien limpio</paso>
+			<paso>Cortarlos en trozos</paso>
+			<paso>Picar la cebolla y los dientes de ajo.</paso>
+			<paso>Sofreir el ajo y la cebolla hasta que quede transparente.</paso>
+			<paso>Los cocinaremos durante cinco minutos y luego, agregaremos las charcuterías (chorizo, morcilla y bacon).</paso>
+			<paso>Colocar los callos (panza, morro, manitas), la zanahoria y el sofrito que venimos de preparar</paso>
+			<paso>Espolvorearemos con una pizca de sal, agregaremos el pimiento choricero y la hoja de laurel.</paso>
+			<paso>Cubrir todo con agua hasta sobrepasar los sólidos con al menos un dedo de líquido</paso>
+		</pasos>
+		<tiempo unidad="minutos">25</tiempo>
+		<elaboracion>Cazo</elaboracion>
+	</receta>
+
+	<receta foto="tiramisu.jpg" idCats="C3 C5">
+		<dificultad>Media</dificultad>
+		<nombre>Tiramisú</nombre>
+		<ingredientes>
+			<ingrediente nombre="cobertura Valor" cantidad="100 gramos"/>
+			<ingrediente nombre="bizcochos blandos" cantidad="24"/>
+			<ingrediente nombre="azúcar" cantidad="0.5 vasos"/>
+			<ingrediente nombre="café solo" cantidad="1 tazón"/>
+			<ingrediente nombre="huevos" cantidad="3"/>
+			<ingrediente nombre="licor" cantidad="1 chorrito"/>
+			<ingrediente nombre="nata lí­quida" cantidad="0.3 litros"/>
+			<ingrediente nombre="queso mascarpone" cantidad="250 gramos"/>
+		</ingredientes>
+		<calorias>450</calorias>
+		<pasos>
+			<paso> Echar la mitad del azúcar en la nata liquida y montarla hasta que quede muy compacta.</paso>
+			<paso>Separar las claras de las yemas y montarlas a punto de nieve.</paso>
+			<paso>Mezclar despacio el queso y las yemas de huevo, añadiendo el resto del azúcar.</paso>
+			<paso>Cuando el queso y las yemas están mezclados juntar con la nata montada y las claras a punto de nieve y mezclar todo bien, pero despacio.</paso>
+			<paso>En el café caliente disolver un tercio del chocolate y echar un chorrito de licor.</paso>
+			<paso>Mojar muy ligeramente los bizcochos en el café sin dejar que se empapen y disponer la mitad de ellos cubriendo el fondo de una fuente.</paso>
+			<paso>Echar la mitad de la mezcla sobre los bizcochos cubriéndolos uniformemente.</paso>
+			<paso>Poner una nueva capa de bizcochos mojados sobre la mezcla.</paso>
+			<paso>Echar el resto de la mezcla sobre la segunda capa de bizcochos.</paso>
+			<paso>Dejar reposar al menos 6 horas antes de servir.</paso>
+		</pasos>
+		<tiempo unidad="horas">7</tiempo>
+		<elaboracion>Microondas</elaboracion>
+	</receta>
+
+</recetas>
