@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ferreteriaSolucion.xsl" type="text/xsl"?>
+<ferreteria>
+    <categoria nombre="destornilladores" bajostock="20">
+        <producto id="1">
+            <nombre>Destornillador estrella 5</nombre>
+            <descripcion>Estralla tamaño 5 con mango de plastico</descripcion>
+            <precio descuento="10">800</precio>
+            <stock>41</stock>
+            <garantia>
+                <tipo>normal</tipo>
+                <duracion>24</duracion>
+            </garantia>
+        </producto>
+        <producto id="2">
+            <nombre>Destornillador plano A</nombre>
+            <descripcion>Destornillador plano A mango madera</descripcion>
+            <precio descuento="20">1000</precio>
+            <stock>2</stock>
+            <garantia>
+                <tipo>avanzada</tipo>
+                <duracion>40</duracion>
+            </garantia>
+        </producto>
+        <producto id="3">
+            <nombre>Destornillador plano B</nombre>
+            <descripcion>Destornillador plano B mango plastico</descripcion>
+            <precio>900</precio>
+            <stock>31</stock>
+            <garantia>
+                <tipo>reducida</tipo>
+                <duracion>12</duracion>
+            </garantia>
+        </producto>
+    </categoria>
+    <categoria nombre="tornillos" bajostock="2000">
+        <producto id="4">
+            <nombre>Tornillo P1</nombre>
+            <descripcion>Tornillo P1</descripcion>
+            <precio>20</precio>
+            <stock>7885</stock>
+            <garantia>
+                <tipo>normal</tipo>
+                <duracion>24</duracion>
+            </garantia>
+        </producto>
+        <producto id="5">
+            <nombre>Tornillo P2</nombre>
+            <descripcion>Tornillo P2</descripcion>
+            <precio descuento="20">18</precio>
+            <stock>1142</stock>
+            <garantia>
+                <tipo>normal</tipo>
+                <duracion>24</duracion>
+            </garantia>
+        </producto>
+        <producto id="6">
+            <nombre>Tornillo P3</nombre>
+            <descripcion>Tornillo P3</descripcion>
+            <precio>7</precio>
+            <stock>1921</stock>
+            <garantia>
+                <tipo>reducida</tipo>
+                <duracion>12</duracion>
+            </garantia>
+        </producto>
+        <producto id="7">
+            <nombre>Tornillo B1</nombre>
+            <descripcion>Tornillo B1</descripcion>
+            <precio>11</precio>
+            <stock>4085</stock>
+            <garantia>
+                <tipo>normal</tipo>
+                <duracion>24</duracion>
+            </garantia>
+        </producto>
+        <producto id="8">
+            <nombre>Tornillo B2</nombre>
+            <descripcion>Tornillo B2</descripcion>
+            <precio descuento="10">10</precio>
+            <stock>20321</stock>
+            <garantia>
+                <tipo>avanzada</tipo>
+                <duracion>40</duracion>
+            </garantia>
+        </producto>
+        <producto id="9">
+            <nombre>Tornillo C</nombre>
+            <descripcion>Tornillo C</descripcion>
+            <precio>2</precio>
+            <stock>23131</stock>
+            <garantia>
+                <tipo>reducida</tipo>
+                <duracion>12</duracion>
+            </garantia>
+        </producto>
+    </categoria>
+    <categoria nombre="martillos" bajostock="15">
+        <producto id="10">
+            <nombre>Martillo doble agarre</nombre>
+            <descripcion>Martillo con doble agarre para uso intensivo</descripcion>
+            <precio descuento="40">2200</precio>
+            <stock>13</stock>
+            <garantia>
+                <tipo>avanzada</tipo>
+                <duracion>40</duracion>
+            </garantia>
+        </producto>
+        <producto id="11">
+            <nombre>Martillo madera</nombre>
+            <descripcion>Martillo con mango de madera</descripcion>
+            <precio>1100</precio>
+            <stock>24</stock>
+            <garantia>
+                <tipo>reducida</tipo>
+                <duracion>12</duracion>
+            </garantia>
+        </producto>
+    </categoria>
+</ferreteria>
